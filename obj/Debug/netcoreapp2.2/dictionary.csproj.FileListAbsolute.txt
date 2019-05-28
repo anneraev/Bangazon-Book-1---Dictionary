@@ -1,0 +1,11 @@
+C:\Users\tonyr\31backend\dictionary\bin\Debug\netcoreapp2.2\dictionary.deps.json
+C:\Users\tonyr\31backend\dictionary\bin\Debug\netcoreapp2.2\dictionary.runtimeconfig.json
+C:\Users\tonyr\31backend\dictionary\bin\Debug\netcoreapp2.2\dictionary.runtimeconfig.dev.json
+C:\Users\tonyr\31backend\dictionary\bin\Debug\netcoreapp2.2\dictionary.dll
+C:\Users\tonyr\31backend\dictionary\bin\Debug\netcoreapp2.2\dictionary.pdb
+C:\Users\tonyr\31backend\dictionary\obj\Debug\netcoreapp2.2\dictionary.csprojAssemblyReference.cache
+C:\Users\tonyr\31backend\dictionary\obj\Debug\netcoreapp2.2\dictionary.csproj.CoreCompileInputs.cache
+C:\Users\tonyr\31backend\dictionary\obj\Debug\netcoreapp2.2\dictionary.AssemblyInfoInputs.cache
+C:\Users\tonyr\31backend\dictionary\obj\Debug\netcoreapp2.2\dictionary.AssemblyInfo.cs
+C:\Users\tonyr\31backend\dictionary\obj\Debug\netcoreapp2.2\dictionary.dll
+C:\Users\tonyr\31backend\dictionary\obj\Debug\netcoreapp2.2\dictionary.pdb

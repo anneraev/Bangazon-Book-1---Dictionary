@@ -7,34 +7,69 @@ namespace dictionary
     {
         static void Main(string[] args)
         {
-            /*
-    Create a dictionary with key value pairs to
-    represent words (key) and its definition (value)
-*/
-            Dictionary<string, string> wordsAndDefinitions = new Dictionary<string, string>();
-
-            // Add several more words and their definitions
-            wordsAndDefinitions.Add("Awesome", "The feeling of students when they are learning C#");
-            wordsAndDefinitions.Add("Whatever", "The feeling of whatever.");
-            wordsAndDefinitions.Add("Tautology", "Defining a concept by using the name of the concept in its definition, thus rendering that definition functionally meaningless.");
+            // Make a new list
+            List<Dictionary<string, string>> dictionaryOfWords = new List<Dictionary<string, string>>();
 
             /*
-                Use square bracket lookup to get the definition two
-                words and output them to the console
+                You want to track the following about each word:
+                    word, definition, part of speech, example sentence
+
+                Example of one dictionary in the list:
+                {
+                    "word": "excited",
+                    "definition": "having, showing, or characterized by a heightened state of energy, enthusiasm, eagerness",
+                    "part of speech": "adjective",
+                    "example sentence": "I am excited to learn C#!"
+                }
             */
-            Console.WriteLine(wordsAndDefinitions["Whatever"]);
-            Console.WriteLine(wordsAndDefinitions["Tautology"]);
 
+            // Create dictionary to represent a few word
+            Dictionary<string, string> excitedWord = new Dictionary<string, string>() {
+                // Add each of the 4 bits of data about the word to the Dictionary
+                {"word", "excited"},
+                {"definition", "having, showing, or characterized by a heightened state of energy, enthusiasm, eagerness"},
+                {"part of speech", "adjective"},
+                {"example sentence", "I am excited to learn C#!"}
+            };
+            dictionaryOfWords.Add(excitedWord);
+
+            // Add Dictionary to your `dictionaryOfWords` list
+            Dictionary<string, string> otherWord = new Dictionary<string, string>(){
+                {"word", "other"},
+                {"definition", "a different word"},
+                {"part of speech", "who cares?"},
+                {"example sentence", "I want to do something other than this."}
+            };
+            dictionaryOfWords.Add(otherWord);
+
+            // create another Dictionary and add that to the list
+            Dictionary<string, string> thisWord = new Dictionary<string, string>(){
+                {"word", "this"},
+                {"definition", "this"},
+                {"part of speech", "this part"},
+                {"example sentence", "This is the this that this is."}
+            };
+            dictionaryOfWords.Add(thisWord);
 
             /*
-                Loop over dictionary to get the following output:
-                    The definition of [WORD] is [DEFINITION]
-                    The definition of [WORD] is [DEFINITION]
-                    The definition of [WORD] is [DEFINITION]
+                Iterate your list of dictionaries and output the data
+
+                Example output for one word in the list of dictionaries:
+                    word: excited
+                    definition: having, showing, or characterized by a heightened state of energy, enthusiasm, eagerness
+                    part of speech: adjective
+                    example sentence: I am excited to learn C#!
             */
-            foreach (KeyValuePair<string, string> word in wordsAndDefinitions)
+
+            // Iterate the List of Dictionaries
+            foreach (Dictionary<string, string> word in dictionaryOfWords)
             {
-                Console.WriteLine($"The definition of '{word.Key}' is '{word.Value}'");
+                // Iterate the KeyValuePairs of the Dictionary
+                foreach (KeyValuePair<string, string> wordData in word)
+                {
+                    Console.WriteLine($"{wordData.Key}: {wordData.Value}");
+                }
+                Console.WriteLine("___________________");
             }
         }
     }
